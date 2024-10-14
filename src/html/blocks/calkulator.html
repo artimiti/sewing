@@ -1,0 +1,169 @@
+<section class="calkulator">
+    <!-- <div class="calkulator__wrap"> -->
+    <div class="container">
+        <h3 class="products-title">Калькулятор цен</h3>
+        <p class="products-txt">узнаете стоимость в 4 шага</p>
+    </div>
+    <div class="calkulator__wrap">
+        <div class="container">
+            <!-- Step 1: Select clothing type -->
+            <div class="step" id="step-1">
+
+                <div class="nambers">
+                    <div class="number">1</div>
+                    <div class="line"></div>
+                    <div class="number">2</div>
+                    <div class="line"></div>
+                    <div class="number">3</div>
+                    <div class="line"></div>
+                    <div class="number">4</div>
+                </div>
+                <!-- <h2>Выберите тип одежды</h2> -->
+                <div class="clothing-type-selector">
+
+                    <label for="shtany">
+                        <input class="clothing__radio" type="radio" id="shtany" name="clothing-type" value="shtany">
+                        <span class="clothing__radio-fake">
+                            <img src="./../../img/products/products-img-1.jpg" alt="Clothing Type 1">
+                        </span>
+                        <p>Штаны</p>
+                    </label>
+
+                    <label for="kofty">
+                        <input class="clothing__radio" type="radio" id="kofty" name="clothing-type" value="kofty">
+                        <span class="clothing__radio-fake">
+                            <img src="./../../img/products/products-img-2.jpg" alt="Clothing Type 2">
+                        </span>
+                        <p>Кофты</p>
+                    </label>
+
+                    <label for="rubashki">
+                        <input class="clothing__radio" type="radio" id="rubashki" name="clothing-type" value="rubashki">
+                        <span class="clothing__radio-fake">
+                            <img src="./../../img/products/products-img-3.jpg" alt="Clothing Type 3">
+                        </span>
+                        <p>Рубашки</p>
+                    </label>
+
+                    <label for="mokasiny">
+                        <input class="clothing__radio" type="radio" id="mokasiny" name="clothing-type" value="mokasiny">
+                        <span class="clothing__radio-fake">
+                            <img src="./../../img/products/products-img-4.jpg" alt="Clothing Type 4">
+                        </span>
+                        <p>Мокасины</p>
+                    </label>
+
+                    <label for="kurtki">
+                        <input class="clothing__radio" type="radio" id="kurtki" name="clothing-type" value="kurtki">
+                        <span class="clothing__radio-fake">
+                            <img src="./../../img/products/products-img-5.jpg" alt="Clothing Type 5">
+                        </span>
+                        <p>Куртки</p>
+                    </label>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="next-step">Далее</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Select quantity -->
+            <div class="step step--container" id="step-2">
+                <div class="nambers">
+                    <div class="number">1</div>
+                    <div class="line"></div>
+                    <div class="number">2</div>
+                    <div class="line"></div>
+                    <div class="number">3</div>
+                    <div class="line"></div>
+                    <div class="number">4</div>
+                </div>
+                <h2>Выберете нужный тираж</h2>
+                <div class="quantity">
+                    <label>
+                        <input class="quantity-radio" type="radio" name="quantity" value="10-20">
+                        <span class="quantity-radio-fake"></span>
+                        10-20 шт
+                    </label>
+                    <label>
+                        <input class="quantity-radio" type="radio" name="quantity" value="20-50">
+                        <span class="quantity-radio-fake"></span>
+                        20-50 шт
+                    </label>
+                    <label>
+                        <input class="quantity-radio" type="radio" name="quantity" value="50-100">
+                        <span class="quantity-radio-fake"></span>
+                        50-100 шт
+                    </label>
+                    <label>
+                        <input class="quantity-radio" type="radio" name="quantity" value="100-300">
+                        <span class="quantity-radio-fake"></span>
+                        100-300 шт
+                    </label>
+
+                </div>
+                <div class="btn-wrapper">
+                    <button class="prev-step">Назад</button>
+                    <button class="next-step">Следующий шаг</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Add comment -->
+            <div class="step step--container" id="step-3">
+                <div class="nambers">
+                    <div class="number">1</div>
+                    <div class="line"></div>
+                    <div class="number">2</div>
+                    <div class="line"></div>
+                    <div class="number">3</div>
+                    <div class="line"></div>
+                    <div class="number">4</div>
+                </div>
+                <h2>Комментарий к рассчету</h2>
+                <textarea class="textarea" id="comment" placeholder="Введите текст..."></textarea>
+                <div class="btn-wrapper">
+                    <button class="prev-step">Назад</button>
+                    <button class="next-step">Следующий шаг</button>
+
+                </div>
+            </div>
+
+            <!-- Step 4: Contact information -->
+            <div class="step step--container" id="step-4">
+                <div class="nambers">
+                    <div class="number">1</div>
+                    <div class="line"></div>
+                    <div class="number">2</div>
+                    <div class="line"></div>
+                    <div class="number">3</div>
+                    <div class="line"></div>
+                    <div class="number">4</div>
+                </div>
+                <h2>Напишите данные для связи</h2>
+
+                <label class="step__label">
+                    Номер телефона*
+                    <input class="step__input" type="tel" id="phone">
+                </label>
+                <label class="step__label">
+                    Електронная почта*
+                    <input class="step__input" type="email" id="email">
+                </label>
+
+                <div class="btn-wrapper">
+
+                    <button class="prev-step">Назад</button>
+                    <button class="send">Получить цену</button>
+                </div>
+            </div>
+
+            <div class="thank-you" id="thank-you-message" style="display: none;">
+
+                <div class="thank-you__block">
+                    <p>Спасибо!<br> Ваш просчет уже готовится!
+                    <p>
+                    <p>Мы ответим в течении 20 минут, засекайте!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

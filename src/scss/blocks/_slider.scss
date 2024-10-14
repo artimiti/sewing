@@ -1,0 +1,64 @@
+.slider {
+    position: relative;
+}
+
+.slider__btn--prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
+}
+
+.slider__btn--next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(100%, -50%);
+}
+
+.products-title--slider{
+    margin-top: clamp(3.125rem, 0.852rem + 11.36vw, 9.375rem);
+}
+
+.slider-txt {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    @include mobile {
+        margin-top: 20px;
+    // margin-bottom: 30px;
+    }
+}
+
+.products__slider {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: -286px;
+        height: 630px;
+        width: 727px;
+        background-image: url('./../../img/Polygon.svg');
+        background-repeat: no-repeat;
+
+        @include mobile {
+            content: none
+        }
+    }
+
+    @include laptop-xl() {
+    
+        padding: 0 70px;
+    
+    }
+    margin-top: 100px;
+    @include mobile {
+        margin-top: 20px;
+    // margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,12 @@
+.background-image__wrapper{
+    &::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 58%;
+		height: 1780px;
+		background-image: url('./../../img/header.svg');
+		background-size: cover;
+	}
+}

@@ -1,0 +1,38 @@
+.footer {
+	background-color: #86D9CE;
+	padding: 26px 0;
+	font-size: 32px;
+    color: #fff;
+
+	a {
+		color: #000;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 26px;
+	}
+}
+
+.footer__nav-title{
+font-weight: 600;
+font-size: 13px;
+color: #000;
+margin-bottom: 15px;
+}
+
+.footer__nav-items{
+font-weight: 400;
+font-size: 12px;
+color: #000;
+}
+
+.footer__wrapper{
+	display: flex;
+	row-gap: 40px;
+	column-gap: 120px;
+	flex-wrap: wrap;
+}
+
+.footer__nav-item + .footer__nav-item{
+	margin-top: 15px;
+}
